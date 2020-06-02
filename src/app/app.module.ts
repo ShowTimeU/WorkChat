@@ -64,7 +64,7 @@ import {MatStepperModule} from '@angular/material/stepper';
     MatSidenavModule,
     MatTabsModule,
     FormsModule,
-    ChatModule,
+    ChatModule
   ],
   providers: [ChatService],
   bootstrap: [AppComponent]
