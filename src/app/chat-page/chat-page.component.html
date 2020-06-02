@@ -1,0 +1,18 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav mode="side" opened>
+    <section>
+      <mat-tab-group>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon matListIcon>forum</mat-icon>
+          </ng-template>
+          <mat-list class="conversations">
+          </mat-list>
+        </mat-tab>
+      </mat-tab-group>
+    </section>
+  </mat-sidenav>
+  <kendo-chat [messages]="feed | async" [user]="user" (sendMessage)="sendMessage($event)"></kendo-chat>
+</mat-sidenav-container>
+
+

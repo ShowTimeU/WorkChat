@@ -1,7 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatCardModule} from '@angular/material/card';
@@ -19,7 +19,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTabsModule} from '@angular/material/tabs';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { ChatModule } from '@progress/kendo-angular-conversational-ui';
+import {ChatModule} from '@progress/kendo-angular-conversational-ui';
+import {ChatService} from './chat-page/chat-service';
+import {ChatPageComponent} from './chat-page/chat-page.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
@@ -35,11 +37,12 @@ import {MatTableModule} from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatStepperModule} from '@angular/material/stepper';
-import {ChatService} from './chat-service';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChatPageComponent
   ],
   imports: [
     BrowserModule,
